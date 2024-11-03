@@ -1,126 +1,101 @@
-//q no 1//
+// 5//
 
-// let a = 10;
-// console.log("Results");
-// console.log("the value of a is" , a);
-// console.log("------------------");
-
-// ++a;
-// console.log("the value of ++a is", a);
-// console.log("now the value of a is " , a);
-
-// console.log("the value of a++ is " , a);
-// a++; 
-// console.log("now the value of a is" ,a);
-
-// --a;
-// console.log("the value of --a is " , a);
-// console.log("now the value of a is " , a);
-  
-// console.log("the value of --a is " , a);
-// a--;
-// console.log("now the value of a is " , a);
-
-
-// q no 2//
-// Initial values
-var a = 2, b = 1;
-
-// Step-by-step breakdown
-console.log("Initial values:");
-console.log("a =", a);
-console.log("b =", b);
-
-// Step 1: --a
-// Decrement 'a' by 1, so 'a' becomes 1
---a;
-console.log("\nAfter --a:");
-console.log("a =", a); // a = 1
-
-// Step 2: --a - --b
-// Decrement 'b' by 1, so 'b' becomes 0
-// Then calculate the expression: --a - --b
-var step2 = --a - --b;
-console.log("\nAfter --a - --b:");
-console.log("a =", a); // a = 1
-console.log("b =", b); // b = 0
-console.log("Result of --a - --b =", step2); // 1 - 0 = 1
-
-// Step 3: --a - --b + ++b
-// Increment 'b' by 1, so 'b' becomes 1
-// Then add to the previous result: --a - --b + ++b
-var step3 = step2 + ++b;
-console.log("\nAfter --a - --b + ++b:");
-console.log("a =", a); // a = 1
-console.log("b =", b); // b = 1
-console.log("Result of --a - --b + ++b =", step3); // 1 + 1 = 2
-
-// Step 4: --a - --b + ++b + b--
-// Use the current value of 'b' (1) and then decrement it
-// Calculate final expression: --a - --b + ++b + b--
-var result = step3 + b--;
-console.log("\nAfter --a - --b + ++b + b--:");
-console.log("a =", a); // a = 1
-console.log("b =", b); // b = 0 (after decrement)
-console.log("Final result =", result); // 2 + 1 = 3
-
-// Final values
-console.log("\nFinal values:");
-console.log("a =", a); // a = 1
-console.log("b =", b); // b = 0
-console.log("result =", result); // result = 3
-
-
-// q no 3 //
-
-// let name1 = prompt("enter your name plz ");
-// console.log("wellcome to our hotel mam " , name1);
-
-
-//q no 4
-
-// // Prompt the user to enter a number
-// let number = prompt("Enter a number to display its multiplication table:", "5");
-
-// // If the user doesn't enter a number, use 5 as default
-// number = number ? parseInt(number) : 5;
-
-// // Display the multiplication table in the console
-// console.log("Multiplication Table of " + number);
-// for (let i = 1; i <= 10; i++) {
-//     console.log(number + " x " + i + " = " + (number * i));
+// let table = 7;
+// for(let i = 1; i<=10; i++){
+//     document.write(table + "x" + i + "=" + table*i + "<br>");
 // }
 
-// q no 5 
+//1
 
-// // Step a: Take three subject names from the user
-// let subject1 = prompt("Enter the name of the first subject:");
-// let subject2 = prompt("Enter the name of the second subject:");
-// let subject3 = prompt("Enter the name of the third subject:");
+// let a = 12;
+// let b = 20;
+// let c = a  + b;
+// document.write("Sum of ", a , " and ",  b, " is " ,c);
 
-// // Step b: Total marks for each subject
-// const totalMarksPerSubject = 100;
+// //2
 
-// // Step c: Take obtained marks for each subject from the user
-// let marks1 = parseFloat(prompt(`Enter obtained marks for ${subject1}:`));
-// let marks2 = parseFloat(prompt(`Enter obtained marks for ${subject2}:`));
-// let marks3 = parseFloat(prompt(`Enter obtained marks for ${subject3}:`));
+// // subtraction
+// let a = 12;
+// let b = 20;
+// let c = a - b;
+// document.write("Subtraction of ", a , " and ",  b, " is " ,c);
 
-// // Step e: Calculate total obtained marks and percentage
-// let totalObtainedMarks = marks1 + marks2 + marks3;
-// let totalMarks = totalMarksPerSubject * 3;
-// let percentage = (totalObtainedMarks / totalMarks) * 100;
+// modulus
 
-// // Display the result in a table format in the browser
-// document.write("<h2>Result</h2>");
-// document.write("<table border='1' cellpadding='10'>");
-// document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
-// document.write(`<tr><td>${subject1}</td><td>${totalMarksPerSubject}</td><td>${marks1}</td></tr>`);
-// document.write(`<tr><td>${subject2}</td><td>${totalMarksPerSubject}</td><td>${marks2}</td></tr>`);
-// document.write(`<tr><td>${subject3}</td><td>${totalMarksPerSubject}</td><td>${marks3}</td></tr>`);
-// document.write("<tr><th>Total</th><th>" + totalMarks + "</th><th>" + totalObtainedMarks + "</th></tr>");
-// document.write("<tr><th colspan='2'>Percentage</th><th>" + percentage.toFixed(2) + "%</th></tr>");
-// document.write("</table>");
+// let a = 12;
+// let b = 40;
+// let c = a % b;
+// document.write("modulus  of ", a , " and ",  b, " is " ,c);
 
+//dicision
+// let a = 12;
+// let b = 40;
+// let c = a/ b;
+// document.write("division  of ", a , " and ",  b, " is " ,c);
+
+// multiplication
+// let a = 12;
+// let b = 10;
+// let c = a * b;
+// document.write("multiplication   of ", a , " and ",  b, " is " ,c);
+
+// 4//
+
+// let ticketsprice = 600;
+// let noOfTickets = 5;
+// let cost = ticketsprice * noOfTickets;
+// document.write("Total cost to buy 5 tickets  to a move is " + cost + "PKR")
+
+// 6//
+
+// let celsius = 35;
+// let fahrenheit = (celsius * 9/5) + 32;
+// document.write(celsius + "°C is " + fahrenheit + "°F<br>");
+
+
+// let fahrenheit = 24;
+// let celsius = (fahrenheit - 32) * 5/9;
+// document.write(fahrenheit + "°F is " + celsius + "°C<br>");
+
+// 7//
+
+
+let price1 = 400; 
+document.write("price of item 1 is " ,price1  ,"<br>");
+let price2 = 300; 
+document.write("price of item 2 is " ,price2  ,"<br>");
+
+let quant1 = 5; 
+document.write("quantity of item 1 is " , quant1 ,"<br>");
+
+let quant2 = 7;
+document.write("quantity  of item 2 is " , quant2  ,"<br>");
+
+let charges1 = 300;
+document.write("shipping charges is " , charges1  ,"<br>");
+
+let totalAmount = (price1 * quant1) + (price2 * quant2) + charges1;
+document.write("Total cost of your order is: " + totalAmount + "<br>");
+
+// q no 8//
+
+let totalMarks = prompt("Enter Your Total Marks!!");
+let marksObtained = prompt("Enter Your Obtained Marks!!");
+let percentage = (marksObtained / totalMarks) * 100;
+document.write("Percentage: " + percentage + "%<br>");
+ 
+//9//
+
+let dollars = 20;
+let riyals = 56;
+let totalPKR = (dollars * 104.80) + (riyals * 28);
+document.write("Total in PKR: " + totalPKR + "<br>");
+
+
+//10//
+
+let number = 9;
+let result = ((number + 5) * 10) / 2;
+document.write("Result: " + result + "<br>");
 
 
